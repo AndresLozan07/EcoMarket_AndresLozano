@@ -16,14 +16,53 @@ header {
 }
 
 /* BANNER PRINCIPAL */
-.banner_principal {
+li.banner_principal {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 420px;
+    padding: 50px 7%;
+    box-sizing: border-box;
+    list-style: none;
+    overflow: hidden;
 }
 
-img.banner_principal {
+/* Imagen de fondo */
+li.banner_principal img.banner_principal {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: 350px;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+/* Texto y botón encima de la imagen */
+li.banner_principal .titulo_banner,
+li.banner_principal .texto_banner,
+li.banner_principal .boton_productos {
+    position: relative;
+    z-index: 1;
+}
+
+li.banner_principal .titulo_banner {
+    max-width: 550px;
+    margin: 0 0 15px;
+}
+
+li.banner_principal .texto_banner {
+    max-width: 450px;
+    margin: 0 0 25px;
+}
+
+li.banner_principal .boton_productos {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
 }
 
 /* BANNER SECUNDARIO */

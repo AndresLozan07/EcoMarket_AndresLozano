@@ -32,13 +32,13 @@ body {
 .titulo_banner {
     font-size: 34px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: rgb(1, 63, 27);
 }
 
 .texto_banner {
     font-size: 12px;
     font-weight: 400;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .boton_productos {
