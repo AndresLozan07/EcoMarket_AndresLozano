@@ -56,7 +56,13 @@ body {
 }
 
 /* Productos destacados */
-.destacado_cafe {
+.destacados_objetos p {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(52, 65, 57);
+}
+
+.destacados_objetos span {
     font-size: 13px;
     font-weight: 700;
     color: rgb(52, 65, 57);
