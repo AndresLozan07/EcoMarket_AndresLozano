@@ -24,7 +24,8 @@ body {
 .e_inicio, .e_catalogo, .e_nosotros, .e_contacto {
     font-size: 10px;
     font-weight: 500;
-    color: rgb(33, 136, 79);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 /* Banner principal */
@@ -51,7 +52,7 @@ body {
 .item_banner h3 {
     font-size: 11px;
     font-weight: 500;
-    color: rgb(52, 65, 57);
+    color: rgb(67, 106, 82);
 }
 
 /* Productos destacados */
