@@ -1,15 +1,62 @@
 /*COMIENZO INDEX.HTML*/
 
+/* ENLACES DEL ENCABEZADO */
+.e_inicio,
+.e_catalogo,
+.e_nosotros,
+.e_contacto {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
 
-/*Encabezado*/
+/* ICONOS DEL ENCABEZADO */
+.barra_lupa,
+.barra_carro {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    cursor: pointer;
+}
 
-/*Banner Principal*/
+/* BOTON DEL BANNER */
+.boton_productos {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(33, 136, 79);
+    text-decoration: none;
+}
 
-/*Banner Secundario*/
+/* BENEFICIOS ECOLOGICOS */
+.item_banner h3 {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(67, 106, 82);
+}
 
-/*Productos 
+/* TEXTOS DE LOS PRODUCTOS */
+.destacados_objetos p {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(52, 65, 57);
+}
 
-/*Pie De Pagina*/
+.destacados_objetos span {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(52, 65, 57);
+}
 
+/* IMAGENES DE REDES SOCIALES */
+footer img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
 
 /*FINAL INDEX.HTML*/
