@@ -9,15 +9,15 @@ body {
 /* Encabezado */
 .titulo span{
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 750;
     color: rgb(33, 136, 79);
 }
 
 .titulo {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 750;
     color: rgb(0, 0, 0);
 }
 
@@ -32,13 +32,13 @@ body {
 .titulo_banner {
     font-size: 34px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: rgb(1, 63, 27);
 }
 
 .texto_banner {
     font-size: 12px;
     font-weight: 400;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .boton_productos {

@@ -1,15 +1,49 @@
 /*COMIENZO INDEX.HTML*/
 
 
-/*Encabezado*/
+/* TRANSICIONES DE LOS ENLACES */
+.e_inicio,
+.e_catalogo,
+.e_nosotros,
+.e_contacto {
+    transition: color 0.3s ease;
+}
 
-/*Banner Principal*/
+.e_inicio:hover,
+.e_catalogo:hover,
+.e_nosotros:hover,
+.e_contacto:hover {
+    color: rgb(33, 136, 79);
+}
 
-/*Banner Secundario*/
+/* EFECTO DEL BOTON */
+.boton_productos {
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
 
-/*Productos*/
+.boton_productos:hover {
+    background-color: rgb(25, 105, 61);
+    transform: translateY(-2px);
+}
 
-/*Pie De Pagina*/
+/* EFECTO DE LOS PRODUCTOS */
+.destacados_objetos img {
+    transition: transform 0.3s ease;
+}
 
+.destacados_objetos img:hover {
+    transform: scale(1.03);
+}
+
+/* ACCESIBILIDAD */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
 
 /*FINAL INDEX.HTML*/
