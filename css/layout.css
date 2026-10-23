@@ -350,3 +350,30 @@ li.pie_de_pagina {
 }
 
 /* FINAL CATALOGO */
+
+
+/* COMIENZO CONTACTO */
+
+/* FORMULARIO Y TARJETA (EN MOVIL, UNO DEBAJO DEL OTRO) */
+.contacto_contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* EN ESCRITORIO, UNO AL LADO DEL OTRO */
+@media (min-width: 600px) {
+    .contacto_contenido {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .formulario_contacto,
+    .tarjeta_info {
+        flex: 1;
+    }
+}
+
+/* FINAL CONTACTO */
