@@ -1,5 +1,4 @@
-/*COMIENZO INDEX.HTML*/
-
+/* COMIENZO INDEX.HTML */
 
 /* ENCABEZADO */
 header {
@@ -66,46 +65,57 @@ li.banner_principal .boton_productos {
 }
 
 /* BANNER SECUNDARIO */
-.banner_secundario {
+li.banner_secundario {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
-    flex-wrap: wrap;
-    background-color: #f0f6ef;
-    padding: 35px 25px;
+    width: 100%;
+    padding: 30px 5%;
     margin: 0;
-    list-style: none;
     box-sizing: border-box;
+    background-color: #f0f6ef;
+    list-style: none;
 }
 
-.item_banner {
+.banner_secundario .item_banner {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    flex: 1;
-    min-width: 150px;
+    gap: 10px;
+    min-width: 0;
     text-align: center;
 }
 
-.item_banner img {
-    width: 70px;
-    height: 70px;
+.banner_secundario .item_banner img {
+    display: block;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
+    margin: 0 auto;
 }
 
-.item_banner h3 {
+.banner_secundario .item_banner h3 {
     margin: 0;
+    text-align: center;
 }
 
-.item_banner {
-    text-align: center;
+/* Adaptación del banner secundario a móviles */
+@media (max-width: 700px) {
+    li.banner_secundario {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .banner_secundario .item_banner {
+        flex: 1 1 120px;
+    }
 }
 
 /* PRODUCTOS DESTACADOS */
-
 .productos_destacados {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -131,10 +141,10 @@ li.banner_principal .boton_productos {
 }
 
 .destacados_objetos img {
-    display: block;
     width: 100%;
-    height: 190px;
-    object-fit: contain;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
 }
 
 .destacados_objetos p {
@@ -157,31 +167,94 @@ li.banner_principal .boton_productos {
     }
 }
 
-.destacados_objetos {
-    min-width: 0;
-}
-
-.destacados_objetos img {
+/* PIE DE PÁGINA */
+li.pie_de_pagina {
+    display: block;
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: #244b38;
 }
 
-/* PIE DE PAGINA */
-.pie_de_pagina {
+.pie_de_pagina footer {
+    display: grid;
+    grid-template-columns: 1.4fr 1.2fr 1.1fr 1.2fr;
+    align-items: start;
+    gap: 30px;
+    width: 100%;
+    padding: 35px 5%;
+    box-sizing: border-box;
+    background-color: #244b38;
+}
+
+/* Evita que los elementos se distribuyan de forma irregular */
+.pie_de_pagina footer h3,
+.pie_de_pagina footer h4,
+.pie_de_pagina footer p {
+    margin: 0 0 12px;
+}
+
+.pie_de_pagina footer h3,
+.pie_de_pagina footer h4,
+.pie_de_pagina footer p {
+    overflow-wrap: anywhere;
+}
+
+.pie_de_pagina footer ol {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 25px;
-    padding: 35px;
-    background-color: rgb(38, 76, 53);
+.pie_de_pagina footer ol p {
+    margin-bottom: 8px;
 }
 
-/* Movil */
+/* Logos de redes sociales */
+.pie_de_pagina footer img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin: 8px 10px 0 0;
+}
+
+/* Ambos logos con el mismo tamaño */
+.pie_de_pagina .logos_redes img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transform: none;
+}
+
+/* Adaptación del pie de página a pantallas pequeñas */
+@media (max-width: 700px) {
+    .pie_de_pagina footer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+        padding: 25px;
+    }
+
+    li.banner_secundario {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .banner_secundario .item_banner {
+        flex: 1 1 120px;
+    }
+}
+
+@media (max-width: 450px) {
+    .pie_de_pagina footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Adaptación general a móviles */
 @media (max-width: 700px) {
     .barra_encabezado {
         flex-wrap: wrap;
@@ -202,5 +275,4 @@ footer {
     }
 }
 
-
-/*FINAL INDEX.HTML*/
+/* FINAL INDEX.HTML */
