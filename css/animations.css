@@ -94,6 +94,31 @@
 
 /* FINAL CATALOGO */
 
+
+
+/* COMIENZO CONTACTO */
+
+.circulo_red,
+.formulario_contacto input,
+.formulario_contacto textarea {
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.circulo_red:hover {
+    background-color: rgb(25, 105, 61);
+    transform: translateY(-2px);
+}
+
+.formulario_contacto input:focus,
+.formulario_contacto textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(185, 220, 199);
+}
+
+/* FINAL CONTACTO */
+
 /* COMIENZO SOBRE NOSOTROS */
 
 /* TRANSICIONES */

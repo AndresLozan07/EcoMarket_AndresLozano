@@ -453,3 +453,111 @@ footer p,
 
 
 /* FINAL SOBRE NOSOTROS */
+
+
+
+/* COMIENZO CONTACTO */
+
+/* FORMULARIO */
+.formulario_contacto {
+    padding: 22px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid rgb(185, 220, 199);
+    border-radius: 8px;
+}
+
+.formulario_contacto label {
+    display: block;
+    margin: 14px 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 48, 40);
+}
+
+.formulario_contacto input,
+.formulario_contacto textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    border: 1px solid rgb(185, 220, 199);
+    border-radius: 6px;
+}
+
+.formulario_contacto textarea {
+    resize: vertical;
+}
+
+/* VALIDACION: VERDE SI ESTA BIEN, ROJO SI FALTA ALGO AL ESCRIBIR */
+.formulario_contacto input:valid,
+.formulario_contacto textarea:valid {
+    border-color: rgb(33, 136, 79);
+}
+
+.formulario_contacto input:focus:invalid,
+.formulario_contacto textarea:focus:invalid {
+    border-color: rgb(200, 50, 50);
+}
+
+.formulario_contacto .boton_verde {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* TARJETA DE INFORMACION */
+.tarjeta_info {
+    padding: 22px;
+    box-sizing: border-box;
+    background-color: rgb(230, 244, 234);
+    border-radius: 8px;
+}
+
+.tarjeta_info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tarjeta_info li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.imagen_ubicacion {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    border-radius: 8px;
+}
+
+/* EL ENLACE USA LA CLASE boton_verde */
+.tarjeta_info .boton_verde {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* CIRCULOS DE REDES */
+.redes_contacto {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.circulo_red {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 136, 79);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* FINAL CONTACTO */
