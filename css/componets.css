@@ -1,15 +1,130 @@
-/*COMIENZO INDEX.HTML*/
+/* COMIENZO INDEX.HTML */
 
+/* TODA LA PÁGINA */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(52, 65, 57);
+}
 
-/*Encabezado*/
+/* ENCABEZADO */
+.titulo span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 750;
+    color: rgb(33, 136, 79);
+}
 
-/*Banner Principal*/
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 750;
+    color: rgb(0, 0, 0);
+}
 
-/*Banner Secundario*/
+.e_inicio,
+.e_catalogo,
+.e_nosotros,
+.e_contacto {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
 
-/*Productos 
+/* ICONOS DEL ENCABEZADO */
+.barra_lupa,
+.barra_carro {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    cursor: pointer;
+}
 
-/*Pie De Pagina*/
+/* BANNER PRINCIPAL */
+.titulo_banner {
+    font-size: 34px;
+    font-weight: 700;
+    color: rgb(1, 63, 27);
+}
 
+.texto_banner {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
 
-/*FINAL INDEX.HTML*/
+.boton_productos {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 136, 79);
+}
+
+/* BANNER SECUNDARIO */
+.item_banner h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(67, 106, 82);
+}
+
+/* PRODUCTOS DESTACADOS */
+.destacados_objetos p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(52, 65, 57);
+}
+
+.destacados_objetos span {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(52, 65, 57);
+}
+
+/* PIE DE PÁGINA */
+footer h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+footer h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+footer p,
+.pie_de_pagina footer ol li {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+/* REDES SOCIALES: ICONO Y TEXTO EN LA MISMA LÍNEA */
+.pie_de_pagina .logos_redes > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* TAMAÑO IGUAL PARA LOS DOS ICONOS */
+.pie_de_pagina .logos_redes img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.pie_de_pagina footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* FINAL INDEX.HTML */
