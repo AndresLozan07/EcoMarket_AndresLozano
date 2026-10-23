@@ -377,3 +377,92 @@ li.pie_de_pagina {
 }
 
 /* FINAL CONTACTO */
+
+/* COMIENZO SOBRE NOSOTROS */
+
+/* NUESTRA HISTORIA (EN MOVIL, TEXTO Y LUEGO IMAGEN) */
+.historia {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.historia_imagen {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* FRANJAS BEIGE */
+.seccion_beige {
+    background-color: #f5f5dc;
+    padding: 40px 0;
+}
+
+/* VALORES Y TESTIMONIOS */
+.valores,
+.lista_testimonios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* PRINCIPIOS */
+.principios {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.lista_principios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px 20px;
+}
+
+.principio {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* TABLET: PRINCIPIOS EN 2 COLUMNAS */
+@media (min-width: 600px) {
+    .lista_principios {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* ESCRITORIO */
+@media (min-width: 800px) {
+    .historia {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .historia_texto {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .historia_imagen {
+        flex: 1;
+        min-width: 0;
+        height: 380px;
+    }
+
+    .valores,
+    .lista_testimonios {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1000px) {
+    .lista_principios {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* FINAL SOBRE NOSOTROS */
